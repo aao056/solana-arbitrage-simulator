@@ -1,5 +1,10 @@
 /target
 /data
-/.env
+.env
+.env.local
+.env.*.local
+cfg.toml
+payer.json
+/payer.json
+*.keypair.json
 .DS_Store
-./payer.json

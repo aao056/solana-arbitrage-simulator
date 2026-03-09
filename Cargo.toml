@@ -15,7 +15,7 @@ solana-pubkey = "4.0.0"
 solana-pubsub-client = "3.1.5"
 solana-rpc-client = "3.1.6"
 solana-rpc-client-types = "3.1.5"
-spl-token = "9.0.0"
+spl-token = { version = "9.0.0", features = ["no-entrypoint"] }
 thiserror = "2.0.17"
 tokio = "1.49.0"
 toml = "0.9.11"
@@ -34,10 +34,10 @@ futures = "0.3.31"
 reqwest = { version = "0.13.1", default-features = false, features = ["json", "rustls", "http2"] }
 dotenvy = "0.15.7"
 rustls = { version = "0.23.36", features = ["ring"] }
-spl-token-2022 = "10.0.0"
+spl-token-2022 = { version = "10.0.0", features = ["no-entrypoint"] }
 spl-memo = "6.0.0"
 solana-compute-budget-interface = "3.0.0"
-spl-associated-token-account = "8.0.0"
+spl-associated-token-account = { version = "8.0.0", features = ["no-entrypoint"] }
 meteora = { path = "src/meteora" }
 solana-address-lookup-table-interface = "3.0.1"
 orca_whirlpools_client = "7.2.0"
