@@ -1,0 +1,63 @@
+# RPC/WSS endpoints are loaded from .env (RPC_URL / WSS_URL).
+
+[[start_mints]]
+mint = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+decimals = 6
+exec_amount = 5.0
+min_profit = 0.0
+probe_amounts = [0.25, 0.5, 1.0, 2.0, 5.0]
+symbol = "USDC"
+
+[[start_mints]]
+mint = "So11111111111111111111111111111111111111112"
+decimals = 9
+exec_amount = 0.05
+min_profit = 0.0
+probe_amounts = [0.0005, 0.001, 0.002, 0.005, 0.01, 0.05]
+symbol = "WSOL"
+
+# Static pool mode: add pools here.
+# Dynamic mode: keep this list empty and use ARB_DYNAMIC_DB_ENABLED=true
+# to load eligible pools from sol_pool_listener sqlite DB.
+
+# Raydium CLMM example
+[[pools]]
+dex = "raydium"
+kind = "clmm"
+symbol = "SET_ME"
+pool_id = "3yiSwy8RzE4NQgGnc68xubz36RXkPo2BbZaVmiuajCFn"
+
+# Orca Whirlpool example
+[[pools]]
+dex = "orca"
+kind = "whirlpool"
+symbol = "SOL_USDC"
+pool_id = "7qbRF6YsyGuLUVs6Y1q64bdVrfe4ZcUUz1JRdoVNUJnm"
+
+# Meteora DLMM example
+[[pools]]
+dex = "meteora"
+kind = "dlmm"
+symbol = "SOL_USDC"
+pool_id = "HTvjzsfX3yU6BUodCjZ5vZkUrAxMDTrBs3CJaq43ashR"
+
+# Meteora DAMM example
+[[pools]]
+dex = "meteora"
+kind = "damm"
+symbol = "SOL_USDC"
+pool_id = "8Pm2kZpnxD3hoMmt4bjStX2Pw2Z9abpbHzZxMPqxPmie"
+
+# PumpSwap AMM example
+[[pools]]
+dex = "pump"
+kind = "amm"
+symbol = "TOKEN_SOL"
+pool_id = "75nAA8odf6E2sYejJHUxM5dHBBKENfrKKSPLJ2PnPpkJ"
+
+# Raydium AMM example
+[[pools]]
+dex = "raydium"
+kind = "amm"
+symbol = "SOL_USDC"
+pool_id = "58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2"
